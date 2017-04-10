@@ -1,5 +1,5 @@
 
-public class TreZeri {
+public class Test_TreZeri {
 
    public static boolean scan( String s ){
 
@@ -13,13 +13,13 @@ public class TreZeri {
          switch( state ){
 
             case 0:
-               if( ch == '0' ) state = 1;
-               else if( ch == '1') state = 0;
+               if( ch == '0') state = 1;
+               else if( ch == '1' ) state = 0;
                else state = -1;
                   break;
 
             case 1:
-               if( ch == '0' ) state = 2;
+               if( ch == '0') state = 2;
                else if( ch == '1' ) state = 0;
                else state = -1;
                   break;
@@ -45,3 +45,5 @@ public class TreZeri {
       System.out.println( scan( args[ 0 ] ) ? "OK" : "NOPE" );
    }
 }
+
+//   compilare e testare per le stringhe 010101 1100011001 10214
