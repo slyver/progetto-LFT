@@ -3,12 +3,13 @@
    Stati:
 
       0. stato iniziale nessun simbolo letto
+         -iniziale
       1. è stato letto '/' come primo simbolo
       2. è stato letto '*' come secondo simbolo
       3. non sono stati letti '/', '*' come primo e secondo simbolo
       4. è stato letto '*' come possibile penultimo simbolo
       5. è stato letto '/' come possibile ultimo simbolo
-
+         -finale
    Funzione di transizione:
 
       f( 0, '/' ) = 1;
