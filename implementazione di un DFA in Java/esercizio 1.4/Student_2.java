@@ -72,7 +72,7 @@
       f( 8, " "+[A-Z]+[0-9]+[a-z] ) = 8
 */
 
-      public class Student{
+      public class Student_2{
 
          public static boolean scan( String s ){
 
@@ -235,10 +235,10 @@
                      else state = -1;
 
                         break;
-                        
+
                }
             }
-               return state == 3;
+               return state == 5 || state == 6 || state == 7;
          }
 
          public static void main( String[] args ){
