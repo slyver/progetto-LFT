@@ -4,21 +4,21 @@ public class Word extends Token {
 
    public Word( int tag, String s ){ super( tag ); lexeme = s; }
 
-   public String toString(){ return "<" + tag + ", " + ">"; }
+   public String toString(){ return "<" + tag + ", " + lexeme + ">"; }
 
    public static final Word
-      iftok = new Word( tag.IF, "if" ),
-      elsetok = new Word( tag.ELSE, "else" ),
-      whiletok = new Word( tag.WHILE, "while" ),
-      assign = new Word( tag.ASSIGN, ":=" ),
-      print = new Word( tag.PRINT, "print" ),
-      read = new Word( tag.READ, "read" ),
-      or = new Word( tag.OR, "||" ),
-      and = new Word( tag.AND, "&&" ),
-      lt = new Word( tag.RELOP, "<" ),
-      gt = new Word( tag.RELOP, ">" ),
-      eq = new Word( tag.RELOP, "==" ),
-      le = new Word( tag.RELOP, "<=" ),
-      ne = new Word( tag.RELOP, "<>" ),
-      ge = new Word( tag.RELOP, ">=" ),
+      iftok = new Word( Tag.IF, "if" ),
+      elsetok = new Word( Tag.ELSE, "else" ),
+      whiletok = new Word( Tag.WHILE, "while" ),
+      assign = new Word( Tag.ASSIGN, ":=" ),
+      print = new Word( Tag.PRINT, "print" ),
+      read = new Word( Tag.READ, "read" ),
+      or = new Word( Tag.OR, "||" ),
+      and = new Word( Tag.AND, "&&" ),
+      lt = new Word( Tag.RELOP, "<" ),
+      gt = new Word( Tag.RELOP, ">" ),
+      eq = new Word( Tag.RELOP, "==" ),
+      le = new Word( Tag.RELOP, "<=" ),
+      ne = new Word( Tag.RELOP, "<>" ),
+      ge = new Word( Tag.RELOP, ">=" );
 }
