@@ -1,0 +1,4 @@
+// comments
+d:=300; /*comments*/ /*another comments*/
+d_hjlcfnf:=8000;
+/* comments
